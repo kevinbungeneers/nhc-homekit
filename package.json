@@ -1,0 +1,26 @@
+{
+  "name": "homekit-nhc",
+  "version": "0.0.1",
+  "description": "Homekit bridge for Niko Home Control",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinbungeneers/homekit-nhc.git"
+  },
+  "keywords": [
+    "Homekit",
+    "Niko Home Control"
+  ],
+  "author": "Kevin Bungeneers <kevin.bungeneers@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinbungeneers/homekit-nhc/issues"
+  },
+  "homepage": "https://github.com/kevinbungeneers/homekit-nhc#readme",
+  "dependencies": {
+    "hap-nodejs": "^0.4.21"
+  }
+}
