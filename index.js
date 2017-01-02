@@ -15,10 +15,6 @@ client.connect('192.168.0.226');
 
 client.on('connect', function() {
   client.listActions(function(actions) {
-    // var light = new Light(actions[1]);
-    // bridge.addBridgedAccessory(
-    //   AccessoryFactory.createLightAccessory(light)
-    // );
     actions.forEach(function(action) {
       var light = new Light(action);
       bridge.addBridgedAccessory(
