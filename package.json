@@ -21,6 +21,6 @@
   "homepage": "https://github.com/kevinbungeneers/nhc-homekit#readme",
   "dependencies": {
     "hap-nodejs": "^0.4.21",
-    "nhc-client": "0.2.0"
+    "nhc-client": "0.2.1"
   }
 }
