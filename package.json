@@ -1,6 +1,6 @@
 {
   "name": "nhc-homekit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Homekit bridge for Niko Home Control",
   "bin": {
     "nhc-homekit": "bin/nhc-homekit"
