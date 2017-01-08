@@ -18,7 +18,7 @@ npm install -g nhc-homekit
 You should now be able to run `nhc-homekit`. Nu further configuration is required!
 
 ### Run at boot
-In order to have `nhc-homekit` startup automatically when your machine boots, you'll have to add a systemd configuration like the following:
+In order to have `nhc-homekit` start up automatically when your machine boots, you'll have to add a systemd configuration like the following:
 
 ```
 [Unit]
@@ -27,9 +27,7 @@ After=syslog.target network-online.target
 
 [Service]
 Type=simple
-User=niko
-EnvironmentFile=/etc/default/nhc-homekit
-ExecStart=/usr/local/bin/nhc-homekit $NHC_HOMEKIT_OPTS
+ExecStart=/usr/local/bin/nhc-homekit
 Restart=on-failure
 RestartSec=10
 KillMode=process
@@ -42,7 +40,7 @@ WantedBy=multi-user.target
 Open up the Home app on your iOS device as soon as `nhc-homekit` is running and go to the "Add Accessory" screen. If all goes well you should see a bridge accessory called "Niko Home Control". Add it and enter the pin `031-45-154`.
 
 ## Troubleshooting
-If you're running into trouble adding the bridge, try deleting the `~/.nhc-homekit` directory.
+If you're running into trouble adding the bridge, try deleting the `persist` directory.
 
 If that doesn't solve the problem, try running `nhc-homekit` with increased verbosity to see `info` and `debug` messages. See `nhc-homekit --help` for details. By default only errors get logged to `stderr`.
 
