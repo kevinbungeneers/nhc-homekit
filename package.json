@@ -22,7 +22,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "hap-nodejs": "^0.4.21",
-    "nhc-client": "0.3.0",
+    "nhc-client": "0.3.1",
     "winston": "^2.3.0"
   }
 }
